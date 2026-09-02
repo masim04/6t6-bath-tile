@@ -18,18 +18,16 @@ import {
 import { Link } from "react-router-dom";
 import SiteHeader from "../components/site/SiteHeader";
 import SiteFooter from "../components/site/SiteFooter";
-import LeadForm from "../components/site/LeadForm";
 import ServiceCard from "../components/site/ServiceCard";
 import heroImage from "../assets/hero.jpg";
 import kitchenImage from "../assets/kitchen.jpg";
 import showerImage from "../assets/shower.jpg";
 import galleryImage from "../assets/gallery4.webp";
-import gallery1 from "../assets/gallery1.webp";
-import gallery2 from "../assets/gallery2.webp";
 import gallery3 from "../assets/gallery3.webp";
 import gallery6 from "../assets/gallery6.webp";
 import gallery12 from "../assets/gallery12.webp";
 import gallery7 from "../assets/gallery7.webp";
+import abc from "../assets/abc.jpg";
 const services = [
   {
     number: "01",
@@ -255,7 +253,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="services-grid">
-              {services.slice(0, 3).map((service, index) => (
+              {services.slice(0, 3).map((service) => (
                 <ServiceCard {...service} key={service.title} />
               ))}
             </div>
@@ -311,15 +309,15 @@ export default function Home() {
               </Link>
             </div>
             <div className="projects-grid">
-              <Link to="/gallery" className="project-card project-card-large h-[400px] sm:w-full w-[400px] object-cover">
+              <Link to="/gallery" className="project-card project-card-large h-[400px] sm:w-full w-full object-cover">
                 <img
                   src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Completed custom walk-in shower with limestone tile"
                 />
-                <div className="project-overlay">
+                <div className="project-overlay flex flex-col p-6">
                   <span>Monrovia / Primary bath</span>
-                  <strong>Soft light, clean lines.</strong>
-                  <ArrowUpRight size={18} />
+                  <strong className="pb-4">Soft light, clean lines.</strong>
+                   <ArrowUpRight size={18} /> 
                 </div>
               </Link>
               <Link to="/gallery" className="project-card project-card-small">
@@ -327,9 +325,9 @@ export default function Home() {
                   src={galleryImage}
                   alt="Hand-laid ceramic kitchen backsplash"
                 />
-                <div className="project-overlay">
+                <div className="project-overlay flex flex-col p-6">
                   <span>Arcadia / Kitchen</span>
-                  <strong>A backsplash with rhythm.</strong>
+                  <strong className="pb-4">A backsplash with rhythm.</strong>
                   <ArrowUpRight size={18} />
                 </div>
               </Link>
@@ -374,10 +372,15 @@ export default function Home() {
                 <Check size={15} /> Serving Monrovia, Duarte, Arcadia, Sierra
                 Madre, and Pasadena
               </div>
+             <Link to="/contact">
+               <button className="button button-orange m-10 ">
+              Contact US <ArrowUpRight size={16} />
+             </button>
+              </Link>
             </div>
-            <div className="contact-form-wrap">
-              <LeadForm />
-            </div>
+              <div className="contact-form-wrap contact-detail-form ">
+                <img src={abc} alt="Description of the image" className="w-full h-full object-cover rounded-lg" />
+              </div>
           </div>
         </section>
       </main>

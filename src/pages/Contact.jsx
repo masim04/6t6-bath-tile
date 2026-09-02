@@ -1,10 +1,9 @@
 /* 626 Bath and Tile style: generous ivory contact layout, navy conversion panel, orange detail markers, and a calm low-friction form experience. */
-import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import SiteHeader from "../components/site/SiteHeader";
 import SiteFooter from "../components/site/SiteFooter";
 import LeadForm from "../components/site/LeadForm";
 import heroImage from "../assets/hero.jpg";
-
 const locations = [
   "Monrovia",
   "Duarte",
@@ -51,34 +50,39 @@ export default function Contact() {
                 practical next step. Prefer to talk? We’re happy to start by
                 phone.
               </p>
-              <div className="contact-detail-list">
+              <div className="contact-detail-list flex flex-col gap-6 p-6">
                 <a href="tel:+16265244255">
                   <span className="contact-detail-icon">
                     <Phone size={16} />
                   </span>
                   <span>
-                    <small>Call us</small>
-                    <strong>(626) 524-4255</strong>
+                    <small>Call us: </small>
+                    <strong className="text-blue-600 hover:text-blue-800">
+                      (626) 524-4255
+                    </strong>
                   </span>
-                  <ArrowUpRight size={17} />
+             
                 </a>
                 <a href="mailto:hello@626bathandtile.com">
                   <span className="contact-detail-icon">
                     <Mail size={16} />
                   </span>
                   <span>
-                    <small>Email</small>
-                    <strong>hello@626bathandtile.com</strong>
+                    <small>Email: </small>
+                    <strong className="text-blue-600 hover:text-blue-800">
+                      hello@626bathandtile.com
+                    </strong>
                   </span>
-                  <ArrowUpRight size={17} />
                 </a>
                 <div>
                   <span className="contact-detail-icon">
                     <MapPin size={16} />
                   </span>
                   <span>
-                    <small>Serving</small>
-                    <strong>Monrovia + the San Gabriel Valley</strong>
+                    <small>Serving: </small>
+                    <strong className="text-blue-600 hover:text-blue-800">
+                      Monrovia + the San Gabriel Valley
+                    </strong>
                   </span>
                 </div>
               </div>
@@ -88,7 +92,7 @@ export default function Contact() {
                 ))}
               </div>
             </div>
-            <div className="contact-form-wrap contact-detail-form">
+            <div className="contact-form-wrap contact-detail-form lg:h-[1100px]">
               <LeadForm />
             </div>
           </div>

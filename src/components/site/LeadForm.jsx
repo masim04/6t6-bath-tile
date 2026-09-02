@@ -1,79 +1,42 @@
 /* 626 Bath and Tile style: warm ivory form surface, precise labels, compact fields, and an orange action that feels confident rather than loud. */
-import { useState } from "react";
-import { ArrowUpRight, Check, Phone } from "lucide-react";
-export default function LeadForm({ compact = false }) {
-  const [submitted, setSubmitted] = useState(false);
-  const handleSubmit = event => {
-    event.preventDefault();
-    setSubmitted(true);
-  };
-  if (submitted) {
-    return (
-      <div className="form-success">
-        <div className="success-icon">
-          <Check size={20} />
-        </div>
-        <p className="eyebrow eyebrow-dark">Message received</p>
-        <h3>We’ll be in touch shortly.</h3>
-        <p>
-          Thanks for reaching out to 626 Bath and Tile. For a faster reply, call
-          us directly.
-        </p>
-        <a href="tel:+16265244255" className="form-call-link">
-          <Phone size={15} /> (626) 524-4255 <ArrowUpRight size={15} />
-        </a>
-      </div>
-    );
-  }
+import { useEffect } from "react";
+export default function LeadForm() {
+  useEffect(() => {
+    // 1. Create the script element dynamically
+    const script = document.createElement('script');
+    script.src = "https://links.magnivodigital.com/js/form_embed.js";
+    script.async = true;
+
+    // 2. Append the script to the body to initialize the form
+    document.body.appendChild(script);
+
+    // 3. Clean up the script when the component unmounts
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+  
   return (
-    <form
-      className={`lead-form ${compact ? "lead-form-compact" : ""}`}
-      onSubmit={handleSubmit}
-    >
-      <div className="form-row">
-        <label>
-          <span>Name</span>
-          <input name="name" placeholder="Your name" required />
-        </label>
-        <label>
-          <span>Phone</span>
-          <input
-            name="phone"
-            type="tel"
-            placeholder="(626) 000-0000"
-            required
-          />
-        </label>
-      </div>
-      <div className="form-row">
-        <label>
-          <span>Email</span>
-          <input
-            name="email"
-            type="email"
-            placeholder="you@email.com"
-            required
-          />
-        </label>
-        <label>
-          <span>Zip code</span>
-          <input name="zip" placeholder="91706" />
-        </label>
-      </div>
-      <label>
-        <span>What are you thinking about?</span>
-        <textarea
-          name="notes"
-          placeholder="Tell us a little about the room, the timing, or the feeling you want to create."
-          rows={compact ? 3 : 4}
-        />
-      </label>
-      <button type="submit" className="button button-orange form-submit">
-        Request a conversation <ArrowUpRight size={16} />
-      </button>
-      <p className="form-note">
-        No pressure, no vague estimates. Just a clear next step.
-      </p>
-    </form>
+   <div style={{ width: '100%', height: '1230px' }}>
+      <iframe
+        src="https://links.magnivodigital.com/widget/form/JpsCa4mRYJV0JCaTw22p"
+        style={{ width: '100%', height: '100%', border: 'none', borderRadius: '8px' }}
+        id="inline-JpsCa4mRYJV0JCaTw22p" 
+        data-layout="{'id':'INLINE'}"
+        data-trigger-type="alwaysShow"
+        data-trigger-value=""
+        data-activation-type="alwaysActivated"
+        data-activation-value=""
+        data-deactivation-type="neverDeactivate"
+        data-deactivation-value=""
+        data-form-name="website contact us form"
+        data-height="1230"
+        data-layout-iframe-id="inline-JpsCa4mRYJV0JCaTw22p"
+        data-form-id="JpsCa4mRYJV0JCaTw22p"
+        data-cookie-consent="true"
+        data-cookie-consent-provider="auto"
+        title="website contact us form"
+      />
+    </div>
   );
 }
