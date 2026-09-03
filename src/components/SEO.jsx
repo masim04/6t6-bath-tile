@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Helmet } from 'react-helmet-async';
 
 const site = {
@@ -12,8 +12,7 @@ export default function SEO({ title, description, url, image, children }) {
   const seo = {
     title: title ? `${title} | ${site.title}` : site.title,
     description: description || site.description,
-    url: url || site.url,
-    image: image || site.image
+    url: url || site.url
   };
 
   return (
@@ -24,7 +23,6 @@ export default function SEO({ title, description, url, image, children }) {
       <meta property="og:title" content={seo.title} />
       <meta property="og:description" content={seo.description} />
       <meta property="og:url" content={seo.url} />
-      <meta property="og:image" content={seo.image} />
       <meta name="twitter:card" content="summary_large_image" />
       {children}
     </Helmet>

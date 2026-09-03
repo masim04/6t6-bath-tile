@@ -81,7 +81,7 @@ export default function SiteHeader() {
             <img
               src={logo}
               alt="626 Bath and Tile"
-              className="brand-logo"
+              className="h-12 w-auto sm:h-14 m-4 rounded-md"
             />
           </Link>
           <nav className="desktop-nav" aria-label="Primary navigation">

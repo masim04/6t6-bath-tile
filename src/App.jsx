@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster } from "sonner";
 import ErrorBoundary from "./components/ErrorBoundary";
 import ScrollToTop from "./components/ScrollToTop";
-import SEO from "./components/SEO";
+// import SEO from "./components/SEO";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Projects from "./pages/Projects";
@@ -19,7 +19,7 @@ function App() {
   return (
     <ErrorBoundary>
       <div>
-        <SEO />
+        {/* <SEO /> */}
         <Toaster />
         <BrowserRouter>
           <ScrollToTop />

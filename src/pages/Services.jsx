@@ -12,7 +12,6 @@ import {
 import { Link } from "react-router-dom";
 import SiteHeader from "../components/site/SiteHeader";
 import SiteFooter from "../components/site/SiteFooter";
-import LeadForm from "../components/site/LeadForm";
 import ServiceCard from "../components/site/ServiceCard";
 import heroImage from "../assets/hero.jpg";
 import kitchenImage from "../assets/kitchen.jpg";
@@ -144,21 +143,7 @@ export default function Services() {
             </Link>
           </div>
         </section>
-        <section className="contact-section contact-section-short">
-          <div className="site-shell contact-grid">
-            <div className="contact-copy">
-              <p className="eyebrow eyebrow-light">Have a question?</p>
-              <h2>Let’s find the right starting point.</h2>
-              <p>
-                Tell us which room you’re thinking about and we’ll help you make
-                sense of the next step.
-              </p>
-            </div>
-            <div className="contact-form-wrap">
-              <LeadForm compact />
-            </div>
-          </div>
-        </section>
+
       </main>
       <SiteFooter />
     </div>

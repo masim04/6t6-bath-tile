@@ -67,7 +67,7 @@ export default function SiteFooter() {
             <img
               src={logo}
               alt="626 Bath and Tile"
-              className="brand-logo "
+              className="h-12 w-auto sm:h-14 m-4"
             />
           </Link>
           <p>

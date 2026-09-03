@@ -40,7 +40,7 @@ export default function Contact() {
         </section>
         <section className="contact-detail-section">
           <div className="site-shell contact-detail-grid">
-            <div className="contact-detail-copy">
+            <div className="contact-detail-copy mt-12">
               <p className="eyebrow eyebrow-dark">Reach out directly</p>
               <h2>
                 Good design starts with <span>a useful conversation.</span>

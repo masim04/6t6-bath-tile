@@ -1,5 +1,5 @@
 import {
-  ArrowUpRight,
+
   Bath,
   Brush,
   Check,
@@ -122,27 +122,17 @@ export default function ServiceDetail() {
                   <Check size={16} /> Clear communication from start to finish
                 </span>
               </div>
-              <Link to="/contact" className="button button-navy">
-                Discuss your project <ArrowUpRight size={16} />
+              <Link to="/contact">
+                <button className="bg-orange-600 rounded-md p-4 text-white m-6">Discuss your project</button>
               </Link>
             </div>
           </div>
         </section>
         <section className="service-detail-more">
           <div className="site-shell">
-            <p className="eyebrow eyebrow-dark">Explore more</p>
-            <div className="related-services">
-              {services
-                .filter(item => item.slug !== service.slug)
-                .slice(0, 3)
-                .map(item => (
-                  <Link to={`/services/${item.slug}`} key={item.slug}>
-                    <span>{item.number}</span>
-                    <strong>{item.title}</strong>
-                    <ArrowUpRight size={16} />
-                  </Link>
-                ))}
-            </div>
+           <Link to="/services" className="button button-navy">
+             <button className="bg-blue-600 rounded-md p-4 text-white m-6">Explore More Services</button>
+            </Link>
           </div>
         </section>
       </main>
