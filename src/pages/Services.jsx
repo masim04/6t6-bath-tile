@@ -15,11 +15,11 @@ import SiteFooter from "../components/site/SiteFooter";
 import ServiceCard from "../components/site/ServiceCard";
 import heroImage from "../assets/hero.jpg";
 import kitchenImage from "../assets/kitchen.jpg";
-import showerImage from "../assets/shower.jpg";
+import gallery5 from "../assets/gallery5.webp";
 import gallery1 from "../assets/gallery1.webp";
 import gallery2 from "../assets/gallery2.webp";
 import gallery3 from "../assets/gallery3.webp";
-
+import gallery4 from "../assets/gallery4.webp";
 const services = [
   {
     number: "01",
@@ -28,7 +28,7 @@ const services = [
     description:
       "A considered refresh from layout and surfaces to lighting, storage, and the final fixture set.",
     icon: Bath,
-    image: showerImage,
+    image: gallery3,
   },
   {
     number: "02",
@@ -55,7 +55,7 @@ const services = [
     description:
       "Custom shower spaces shaped around how you move, with refined waterproofing and modern fixtures.",
     icon: ShowerHead,
-    image: showerImage,
+    image: gallery5,
   },
   {
     number: "05",
@@ -73,7 +73,7 @@ const services = [
     description:
       "Thoughtful installation for floors, walls, and feature moments that connect the kitchen to the rest of the home.",
     icon: Utensils,
-    image: gallery3,
+    image: gallery4,
   },
 ];
 
