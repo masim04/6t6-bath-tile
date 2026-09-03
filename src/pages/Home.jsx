@@ -25,9 +25,10 @@ import showerImage from "../assets/shower.jpg";
 import galleryImage from "../assets/gallery4.webp";
 import gallery3 from "../assets/gallery3.webp";
 import gallery6 from "../assets/gallery6.webp";
-import gallery12 from "../assets/gallery12.webp";
+import gallery1 from "../assets/gallery1.webp";
 import gallery7 from "../assets/gallery7.webp";
-import abc from "../assets/abc.jpg";
+import gallery9 from "../assets/gallery9.webp";
+import gallery4 from "../assets/gallery4.webp";
 const services = [
   {
     number: "01",
@@ -45,7 +46,7 @@ const services = [
     description:
       "Material direction, finish pairings, and a practical point of view that keeps the room cohesive.",
     icon: Brush,
-    image: gallery12,
+    image: gallery1,
   },
   {
     number: "03",
@@ -122,7 +123,7 @@ const process = [
 const proofPoints = [
   { value: "10+", label: "Years of craft" },
   { value: "100%", label: "Care in the details" },
-  { value: "5", label: "Cities served" },
+  { value: "Many", label: "Cities served" },
 ];
 
 export default function Home() {
@@ -174,7 +175,7 @@ export default function Home() {
             </div>
             <div className="hero-image-card animate-rise-delayed">
               <img
-                src={heroImage}
+                src={gallery7}
                 alt="Tile installer aligning a porcelain tile"
               />
               <div className="image-card-caption">
@@ -267,7 +268,7 @@ export default function Home() {
         <section className="process-section">
           <div className="process-image-wrap">
             <img
-              src={kitchenImage}
+              src={gallery4}
               alt="Warm ceramic kitchen backsplash with blue cabinetry"
             />
             <div className="process-image-label">Material / 02</div>
@@ -311,7 +312,7 @@ export default function Home() {
             <div className="projects-grid">
               <Link to="/gallery" className="project-card project-card-large h-[400px] sm:w-full w-full object-cover">
                 <img
-                  src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src={gallery6}
                   alt="Completed custom walk-in shower with limestone tile"
                 />
                 <div className="project-overlay flex flex-col p-6">
@@ -379,7 +380,7 @@ export default function Home() {
               </Link>
             </div>
               <div className="contact-form-wrap contact-detail-form ">
-                <img src={abc} alt="Description of the image" className="w-full h-full object-cover rounded-lg" />
+                <img src={gallery9} alt="Description of the image" className="w-full h-100 object-cover rounded-lg" />
               </div>
           </div>
         </section>

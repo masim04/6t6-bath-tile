@@ -14,12 +14,12 @@ import SiteHeader from "../components/site/SiteHeader";
 import SiteFooter from "../components/site/SiteFooter";
 import ServiceCard from "../components/site/ServiceCard";
 import heroImage from "../assets/hero.jpg";
-import kitchenImage from "../assets/kitchen.jpg";
-import gallery5 from "../assets/gallery5.webp";
+import work from "../assets/work.jpg";
 import gallery1 from "../assets/gallery1.webp";
-import gallery2 from "../assets/gallery2.webp";
+import bath from "../assets/bath.jpg";
 import gallery3 from "../assets/gallery3.webp";
 import gallery4 from "../assets/gallery4.webp";
+import ceramic from "../assets/ceramic.jpg";
 const services = [
   {
     number: "01",
@@ -46,7 +46,7 @@ const services = [
     description:
       "Precise layout, durable setting, and clean grout work for floors that stay beautiful under real life.",
     icon: Layers3,
-    image: gallery2,
+    image: ceramic,
   },
   {
     number: "04",
@@ -55,7 +55,7 @@ const services = [
     description:
       "Custom shower spaces shaped around how you move, with refined waterproofing and modern fixtures.",
     icon: ShowerHead,
-    image: gallery5,
+    image: bath,
   },
   {
     number: "05",
@@ -64,7 +64,7 @@ const services = [
     description:
       "A tailored tile plane that adds rhythm, texture, and a finished edge to the heart of the home.",
     icon: Ruler,
-    image: kitchenImage,
+    image: work,
   },
   {
     number: "06",

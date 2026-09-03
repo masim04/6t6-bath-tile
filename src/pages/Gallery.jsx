@@ -2,8 +2,6 @@ import { useState, useEffect } from "react";
 import SiteHeader from "../components/site/SiteHeader";
 import SiteFooter from "../components/site/SiteFooter";
 import gallery1 from "../assets/gallery1.webp";
-import gallery2 from "../assets/gallery2.webp";
-import gallery5 from "../assets/gallery5.webp";
 import gallery6 from "../assets/gallery6.webp";
 import gallery7 from "../assets/gallery7.webp";
 import gallery8 from "../assets/gallery8.webp";
@@ -12,10 +10,12 @@ import gallery10 from "../assets/gallery10.webp";
 import showertile from "../assets/showertile.jpg";
 import gallery11 from "../assets/gallery11.webp";
 import gallery12 from "../assets/gallery12.webp";
+import bath from "../assets/bath.jpg"
+import ceramic from "../assets/ceramic.jpg"
 import heroImage from "../assets/hero.jpg";
 const galleryImages = [
   { src: gallery6, title: "Primary Bath", location: "Monrovia" },
-  { src: gallery2, title: "Tile Detail", location: "Arcadia" },
+  { src: ceramic, title: "Tile Detail", location: "Arcadia" },
   { src: gallery12, title: "Tile Work", location: "Pasadena" },
   { src: gallery1, title: "Custom Bath", location: "Sierra Madre" },
   { src: gallery11, title: "Kitchen Backsplash", location: "Duarte" },
@@ -24,7 +24,7 @@ const galleryImages = [
   { src: gallery8, title: "Bathroom Refresh", location: "Arcadia" },
   { src: gallery9, title: "Finished Kitchen", location: "San Gabriel" },
   { src: gallery10, title: "Bath Detail", location: "Pasadena" },
-  { src: gallery5, title: "Walk-In Shower", location: "Alhambra" },
+  { src: bath, title: "Walk-In Shower", location: "Alhambra" },
 ];
 
 export default function Gallery() {

@@ -5,7 +5,7 @@ import SiteFooter from "../components/site/SiteFooter";
 import heroImage from "../assets/hero.jpg";
 import gallery1 from "../assets/gallery1.webp";
 import gallery3 from "../assets/gallery3.webp";
-import gallery5 from "../assets/gallery5.webp";
+import gallery9 from "../assets/gallery9.webp";
 import gallery7 from "../assets/gallery7.webp";
 import gallery11 from "../assets/gallery11.webp";
 
@@ -36,7 +36,7 @@ const blogPosts = [
     title: "Five Ways a Kitchen Backsplash Can Bring a Room Together",
     excerpt:
       "From quiet texture to a graphic focal point, tile can give the hardest-working room in the house a clear point of view.",
-    image: gallery5,
+    image: gallery9,
     date: "June 12, 2026",
     readTime: "4 min read",
   },
